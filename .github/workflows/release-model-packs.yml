@@ -1,0 +1,60 @@
+name: Release model packs
+
+on:
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: "Release tag (default: model-packs)"
+        required: false
+        default: "model-packs"
+        type: string
+  push:
+    tags:
+      - "model-packs"
+      - "model-packs-*"
+
+permissions:
+  contents: write
+
+jobs:
+  build-and-release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Build model packs
+        run: |
+          TAG_NAME="${GITHUB_REF_NAME}"
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            TAG_NAME="${{ inputs.tag }}"
+            if [ -z "${TAG_NAME}" ]; then
+              TAG_NAME="model-packs"
+            fi
+          fi
+          npm run -s build:model-packs -- --repo "${GITHUB_REPOSITORY}" --tag "${TAG_NAME}"
+
+      # Rolling tags (e.g. `model-packs`) are expected to be reused. GitHub Release assets are immutable unless
+      # uploaded with --clobber, so we use `gh` to overwrite existing assets in-place.
+      - name: Publish GitHub Release assets (clobber)
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+
+          TAG_NAME="${GITHUB_REF_NAME}"
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            TAG_NAME="${{ inputs.tag }}"
+            if [ -z "${TAG_NAME}" ]; then
+              TAG_NAME="model-packs"
+            fi
+          fi
+
+          if ! gh release view "${TAG_NAME}" >/dev/null 2>&1; then
+            gh release create "${TAG_NAME}" --title "Model packs (${TAG_NAME})" --notes ""
+          fi
+
+          gh release upload "${TAG_NAME}" dist/release/* --clobber

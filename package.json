@@ -1,0 +1,11 @@
+{
+  "name": "happier-assets",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "build:model-packs": "node scripts/build-model-packs.mjs",
+    "test": "node --test",
+    "fmt": "echo \"(no formatter configured)\""
+  }
+}

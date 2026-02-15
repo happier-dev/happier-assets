@@ -1,0 +1,42 @@
+{
+  "packs": [
+    {
+      "packId": "kokoro-82m-v1.0-onnx-q8-wasm",
+      "kind": "tts_sherpa",
+      "model": "kokoro",
+      "version": "kokoro-int8-multi-lang-v1_1",
+      "sourceUrl": "https://github.com/k2-fsa/sherpa-onnx/releases/download/tts-models/kokoro-int8-multi-lang-v1_1.tar.bz2",
+      "sourceRoot": "kokoro-int8-multi-lang-v1_1",
+      "licenseNotices": [
+        "Kokoro weights: Apache-2.0 (per upstream model release)",
+        "sherpa-onnx: Apache-2.0",
+        "espeak-ng data: GPL-3.0-or-later (per espeak-ng)"
+      ],
+      "entries": [
+        { "from": "model.int8.onnx", "to": "model.onnx", "type": "file" },
+        { "from": "voices.bin", "to": "voices.bin", "type": "file" },
+        { "from": "tokens.txt", "to": "tokens.txt", "type": "file" },
+        { "from": "espeak-ng-data", "to": "espeak-ng-data", "type": "dir" }
+      ]
+    },
+    {
+      "packId": "sherpa-onnx-streaming-zipformer-en-20M-2023-02-17",
+      "kind": "stt_sherpa",
+      "model": "zipformer_transducer",
+      "version": "sherpa-onnx-streaming-zipformer-en-20M-2023-02-17-int8",
+      "sourceUrl": "https://github.com/k2-fsa/sherpa-onnx/releases/download/asr-models/sherpa-onnx-streaming-zipformer-en-20M-2023-02-17.tar.bz2",
+      "sourceRoot": "sherpa-onnx-streaming-zipformer-en-20M-2023-02-17",
+      "licenseNotices": [
+        "sherpa-onnx: Apache-2.0",
+        "model release: see upstream sherpa-onnx release notes"
+      ],
+      "entries": [
+        { "from": "tokens.txt", "to": "tokens.txt", "type": "file" },
+        { "from": "encoder-epoch-99-avg-1.int8.onnx", "to": "encoder.onnx", "type": "file" },
+        { "from": "decoder-epoch-99-avg-1.int8.onnx", "to": "decoder.onnx", "type": "file" },
+        { "from": "joiner-epoch-99-avg-1.int8.onnx", "to": "joiner.onnx", "type": "file" }
+      ]
+    }
+  ]
+}
+
