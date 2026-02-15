@@ -57,4 +57,42 @@ jobs:
             gh release create "${TAG_NAME}" --title "Model packs (${TAG_NAME})" --notes ""
           fi
 
-          gh release upload "${TAG_NAME}" dist/release/* --clobber
+          # Upload each asset individually with retry/backoff to avoid GitHub "secondary rate limit"
+          # when publishing packs that contain many small files (e.g. espeak-ng-data).
+          shopt -s nullglob
+          files=(dist/release/*)
+          echo "Uploading ${#files[@]} release assets to tag ${TAG_NAME}"
+
+          for f in "${files[@]}"; do
+            echo "Uploading: ${f}"
+            attempt=1
+            while true; do
+              set +e
+              out="$(gh release upload "${TAG_NAME}" "${f}" --clobber 2>&1)"
+              status=$?
+              set -e
+
+              if [ "${status}" -eq 0 ]; then
+                break
+              fi
+
+              echo "${out}"
+
+              # GitHub secondary rate limit: backoff and retry.
+              if echo "${out}" | grep -qi "secondary rate limit"; then
+                if [ "${attempt}" -ge 10 ]; then
+                  echo "Exceeded retry budget uploading ${f}"
+                  exit 1
+                fi
+                sleep_seconds=$((attempt * 20))
+                echo "Hit secondary rate limit; sleeping ${sleep_seconds}s then retrying (attempt ${attempt}/10)"
+                sleep "${sleep_seconds}"
+                attempt=$((attempt + 1))
+                continue
+              fi
+
+              # Any other error should fail fast (permissions, missing tag, etc.).
+              echo "Upload failed for ${f}"
+              exit 1
+            done
+          done
