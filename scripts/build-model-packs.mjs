@@ -5,6 +5,7 @@ import { dirname, join, relative } from 'node:path';
 import { tmpdir } from 'node:os';
 
 import { installLicensesIntoPack } from './licensePackaging.mjs';
+import { releaseAssetNameForPath } from './releaseAssetNames.mjs';
 
 function parseArgs(argv) {
   const out = { repo: null, tag: null, outDir: 'dist', packsFile: 'packs/packs.json' };
@@ -56,10 +57,6 @@ function run(cmd, args, opts = {}) {
   if (res.status !== 0) {
     throw new Error(`command_failed:${cmd}`);
   }
-}
-
-function assetNameFor(packId, relPath) {
-  return `${packId}__${relPath.split('/').join('__')}`;
 }
 
 function releaseBaseUrl(repo, tag) {
@@ -159,11 +156,11 @@ for (const pack of packs) {
     const buf = readFileSync(f.full);
     const sha256 = sha256Hex(buf);
     const url = baseUrl
-      ? `${baseUrl}/${assetNameFor(packId, f.rel)}?v=${encodeURIComponent(buildId)}`
-      : `__RELEASE_URL_MISSING__/${assetNameFor(packId, f.rel)}`;
+      ? `${baseUrl}/${releaseAssetNameForPath(packId, f.rel)}?v=${encodeURIComponent(buildId)}`
+      : `__RELEASE_URL_MISSING__/${releaseAssetNameForPath(packId, f.rel)}`;
     manifestFiles.push({ path: f.rel, url, sha256, sizeBytes: f.sizeBytes });
 
-    const releaseAssetPath = join(releaseOutRoot, assetNameFor(packId, f.rel));
+    const releaseAssetPath = join(releaseOutRoot, releaseAssetNameForPath(packId, f.rel));
     ensureDir(dirname(releaseAssetPath));
     copyFileSync(f.full, releaseAssetPath);
   }
