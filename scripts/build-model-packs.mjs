@@ -174,6 +174,8 @@ for (const pack of packs) {
     publishedAt,
     licenseNotices: pack.licenseNotices ?? undefined,
     voices: pack.voices ?? undefined,
+    defaultVoiceId: pack.defaultVoiceId ?? undefined,
+    frontend: pack.frontend ?? undefined,
     files: manifestFiles,
   };
 
