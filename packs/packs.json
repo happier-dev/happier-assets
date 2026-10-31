@@ -5,6 +5,630 @@
       "kind": "tts_sherpa",
       "model": "kokoro",
       "version": "kokoro-int8-multi-lang-v1_1",
+      "voices": [
+        {
+          "id": "af_maple",
+          "title": "Maple",
+          "subtitle": "American English · female",
+          "sid": 0
+        },
+        {
+          "id": "af_sol",
+          "title": "Sol",
+          "subtitle": "American English · female",
+          "sid": 1
+        },
+        {
+          "id": "bf_vale",
+          "title": "Vale",
+          "subtitle": "British English · female",
+          "sid": 2
+        },
+        {
+          "id": "zf_001",
+          "title": "Mandarin voice 1",
+          "subtitle": "Mandarin Chinese · female",
+          "sid": 3
+        },
+        {
+          "id": "zf_002",
+          "title": "Mandarin voice 2",
+          "subtitle": "Mandarin Chinese · female",
+          "sid": 4
+        },
+        {
+          "id": "zf_003",
+          "title": "Mandarin voice 3",
+          "subtitle": "Mandarin Chinese · female",
+          "sid": 5
+        },
+        {
+          "id": "zf_004",
+          "title": "Mandarin voice 4",
+          "subtitle": "Mandarin Chinese · female",
+          "sid": 6
+        },
+        {
+          "id": "zf_005",
+          "title": "Mandarin voice 5",
+          "subtitle": "Mandarin Chinese · female",
+          "sid": 7
+        },
+        {
+          "id": "zf_006",
+          "title": "Mandarin voice 6",
+          "subtitle": "Mandarin Chinese · female",
+          "sid": 8
+        },
+        {
+          "id": "zf_007",
+          "title": "Mandarin voice 7",
+          "subtitle": "Mandarin Chinese · female",
+          "sid": 9
+        },
+        {
+          "id": "zf_008",
+          "title": "Mandarin voice 8",
+          "subtitle": "Mandarin Chinese · female",
+          "sid": 10
+        },
+        {
+          "id": "zf_017",
+          "title": "Mandarin voice 17",
+          "subtitle": "Mandarin Chinese · female",
+          "sid": 11
+        },
+        {
+          "id": "zf_018",
+          "title": "Mandarin voice 18",
+          "subtitle": "Mandarin Chinese · female",
+          "sid": 12
+        },
+        {
+          "id": "zf_019",
+          "title": "Mandarin voice 19",
+          "subtitle": "Mandarin Chinese · female",
+          "sid": 13
+        },
+        {
+          "id": "zf_021",
+          "title": "Mandarin voice 21",
+          "subtitle": "Mandarin Chinese · female",
+          "sid": 14
+        },
+        {
+          "id": "zf_022",
+          "title": "Mandarin voice 22",
+          "subtitle": "Mandarin Chinese · female",
+          "sid": 15
+        },
+        {
+          "id": "zf_023",
+          "title": "Mandarin voice 23",
+          "subtitle": "Mandarin Chinese · female",
+          "sid": 16
+        },
+        {
+          "id": "zf_024",
+          "title": "Mandarin voice 24",
+          "subtitle": "Mandarin Chinese · female",
+          "sid": 17
+        },
+        {
+          "id": "zf_026",
+          "title": "Mandarin voice 26",
+          "subtitle": "Mandarin Chinese · female",
+          "sid": 18
+        },
+        {
+          "id": "zf_027",
+          "title": "Mandarin voice 27",
+          "subtitle": "Mandarin Chinese · female",
+          "sid": 19
+        },
+        {
+          "id": "zf_028",
+          "title": "Mandarin voice 28",
+          "subtitle": "Mandarin Chinese · female",
+          "sid": 20
+        },
+        {
+          "id": "zf_032",
+          "title": "Mandarin voice 32",
+          "subtitle": "Mandarin Chinese · female",
+          "sid": 21
+        },
+        {
+          "id": "zf_036",
+          "title": "Mandarin voice 36",
+          "subtitle": "Mandarin Chinese · female",
+          "sid": 22
+        },
+        {
+          "id": "zf_038",
+          "title": "Mandarin voice 38",
+          "subtitle": "Mandarin Chinese · female",
+          "sid": 23
+        },
+        {
+          "id": "zf_039",
+          "title": "Mandarin voice 39",
+          "subtitle": "Mandarin Chinese · female",
+          "sid": 24
+        },
+        {
+          "id": "zf_040",
+          "title": "Mandarin voice 40",
+          "subtitle": "Mandarin Chinese · female",
+          "sid": 25
+        },
+        {
+          "id": "zf_042",
+          "title": "Mandarin voice 42",
+          "subtitle": "Mandarin Chinese · female",
+          "sid": 26
+        },
+        {
+          "id": "zf_043",
+          "title": "Mandarin voice 43",
+          "subtitle": "Mandarin Chinese · female",
+          "sid": 27
+        },
+        {
+          "id": "zf_044",
+          "title": "Mandarin voice 44",
+          "subtitle": "Mandarin Chinese · female",
+          "sid": 28
+        },
+        {
+          "id": "zf_046",
+          "title": "Mandarin voice 46",
+          "subtitle": "Mandarin Chinese · female",
+          "sid": 29
+        },
+        {
+          "id": "zf_047",
+          "title": "Mandarin voice 47",
+          "subtitle": "Mandarin Chinese · female",
+          "sid": 30
+        },
+        {
+          "id": "zf_048",
+          "title": "Mandarin voice 48",
+          "subtitle": "Mandarin Chinese · female",
+          "sid": 31
+        },
+        {
+          "id": "zf_049",
+          "title": "Mandarin voice 49",
+          "subtitle": "Mandarin Chinese · female",
+          "sid": 32
+        },
+        {
+          "id": "zf_051",
+          "title": "Mandarin voice 51",
+          "subtitle": "Mandarin Chinese · female",
+          "sid": 33
+        },
+        {
+          "id": "zf_059",
+          "title": "Mandarin voice 59",
+          "subtitle": "Mandarin Chinese · female",
+          "sid": 34
+        },
+        {
+          "id": "zf_060",
+          "title": "Mandarin voice 60",
+          "subtitle": "Mandarin Chinese · female",
+          "sid": 35
+        },
+        {
+          "id": "zf_067",
+          "title": "Mandarin voice 67",
+          "subtitle": "Mandarin Chinese · female",
+          "sid": 36
+        },
+        {
+          "id": "zf_070",
+          "title": "Mandarin voice 70",
+          "subtitle": "Mandarin Chinese · female",
+          "sid": 37
+        },
+        {
+          "id": "zf_071",
+          "title": "Mandarin voice 71",
+          "subtitle": "Mandarin Chinese · female",
+          "sid": 38
+        },
+        {
+          "id": "zf_072",
+          "title": "Mandarin voice 72",
+          "subtitle": "Mandarin Chinese · female",
+          "sid": 39
+        },
+        {
+          "id": "zf_073",
+          "title": "Mandarin voice 73",
+          "subtitle": "Mandarin Chinese · female",
+          "sid": 40
+        },
+        {
+          "id": "zf_074",
+          "title": "Mandarin voice 74",
+          "subtitle": "Mandarin Chinese · female",
+          "sid": 41
+        },
+        {
+          "id": "zf_075",
+          "title": "Mandarin voice 75",
+          "subtitle": "Mandarin Chinese · female",
+          "sid": 42
+        },
+        {
+          "id": "zf_076",
+          "title": "Mandarin voice 76",
+          "subtitle": "Mandarin Chinese · female",
+          "sid": 43
+        },
+        {
+          "id": "zf_077",
+          "title": "Mandarin voice 77",
+          "subtitle": "Mandarin Chinese · female",
+          "sid": 44
+        },
+        {
+          "id": "zf_078",
+          "title": "Mandarin voice 78",
+          "subtitle": "Mandarin Chinese · female",
+          "sid": 45
+        },
+        {
+          "id": "zf_079",
+          "title": "Mandarin voice 79",
+          "subtitle": "Mandarin Chinese · female",
+          "sid": 46
+        },
+        {
+          "id": "zf_083",
+          "title": "Mandarin voice 83",
+          "subtitle": "Mandarin Chinese · female",
+          "sid": 47
+        },
+        {
+          "id": "zf_084",
+          "title": "Mandarin voice 84",
+          "subtitle": "Mandarin Chinese · female",
+          "sid": 48
+        },
+        {
+          "id": "zf_085",
+          "title": "Mandarin voice 85",
+          "subtitle": "Mandarin Chinese · female",
+          "sid": 49
+        },
+        {
+          "id": "zf_086",
+          "title": "Mandarin voice 86",
+          "subtitle": "Mandarin Chinese · female",
+          "sid": 50
+        },
+        {
+          "id": "zf_087",
+          "title": "Mandarin voice 87",
+          "subtitle": "Mandarin Chinese · female",
+          "sid": 51
+        },
+        {
+          "id": "zf_088",
+          "title": "Mandarin voice 88",
+          "subtitle": "Mandarin Chinese · female",
+          "sid": 52
+        },
+        {
+          "id": "zf_090",
+          "title": "Mandarin voice 90",
+          "subtitle": "Mandarin Chinese · female",
+          "sid": 53
+        },
+        {
+          "id": "zf_092",
+          "title": "Mandarin voice 92",
+          "subtitle": "Mandarin Chinese · female",
+          "sid": 54
+        },
+        {
+          "id": "zf_093",
+          "title": "Mandarin voice 93",
+          "subtitle": "Mandarin Chinese · female",
+          "sid": 55
+        },
+        {
+          "id": "zf_094",
+          "title": "Mandarin voice 94",
+          "subtitle": "Mandarin Chinese · female",
+          "sid": 56
+        },
+        {
+          "id": "zf_099",
+          "title": "Mandarin voice 99",
+          "subtitle": "Mandarin Chinese · female",
+          "sid": 57
+        },
+        {
+          "id": "zm_009",
+          "title": "Mandarin voice 9",
+          "subtitle": "Mandarin Chinese · male",
+          "sid": 58
+        },
+        {
+          "id": "zm_010",
+          "title": "Mandarin voice 10",
+          "subtitle": "Mandarin Chinese · male",
+          "sid": 59
+        },
+        {
+          "id": "zm_011",
+          "title": "Mandarin voice 11",
+          "subtitle": "Mandarin Chinese · male",
+          "sid": 60
+        },
+        {
+          "id": "zm_012",
+          "title": "Mandarin voice 12",
+          "subtitle": "Mandarin Chinese · male",
+          "sid": 61
+        },
+        {
+          "id": "zm_013",
+          "title": "Mandarin voice 13",
+          "subtitle": "Mandarin Chinese · male",
+          "sid": 62
+        },
+        {
+          "id": "zm_014",
+          "title": "Mandarin voice 14",
+          "subtitle": "Mandarin Chinese · male",
+          "sid": 63
+        },
+        {
+          "id": "zm_015",
+          "title": "Mandarin voice 15",
+          "subtitle": "Mandarin Chinese · male",
+          "sid": 64
+        },
+        {
+          "id": "zm_016",
+          "title": "Mandarin voice 16",
+          "subtitle": "Mandarin Chinese · male",
+          "sid": 65
+        },
+        {
+          "id": "zm_020",
+          "title": "Mandarin voice 20",
+          "subtitle": "Mandarin Chinese · male",
+          "sid": 66
+        },
+        {
+          "id": "zm_025",
+          "title": "Mandarin voice 25",
+          "subtitle": "Mandarin Chinese · male",
+          "sid": 67
+        },
+        {
+          "id": "zm_029",
+          "title": "Mandarin voice 29",
+          "subtitle": "Mandarin Chinese · male",
+          "sid": 68
+        },
+        {
+          "id": "zm_030",
+          "title": "Mandarin voice 30",
+          "subtitle": "Mandarin Chinese · male",
+          "sid": 69
+        },
+        {
+          "id": "zm_031",
+          "title": "Mandarin voice 31",
+          "subtitle": "Mandarin Chinese · male",
+          "sid": 70
+        },
+        {
+          "id": "zm_033",
+          "title": "Mandarin voice 33",
+          "subtitle": "Mandarin Chinese · male",
+          "sid": 71
+        },
+        {
+          "id": "zm_034",
+          "title": "Mandarin voice 34",
+          "subtitle": "Mandarin Chinese · male",
+          "sid": 72
+        },
+        {
+          "id": "zm_035",
+          "title": "Mandarin voice 35",
+          "subtitle": "Mandarin Chinese · male",
+          "sid": 73
+        },
+        {
+          "id": "zm_037",
+          "title": "Mandarin voice 37",
+          "subtitle": "Mandarin Chinese · male",
+          "sid": 74
+        },
+        {
+          "id": "zm_041",
+          "title": "Mandarin voice 41",
+          "subtitle": "Mandarin Chinese · male",
+          "sid": 75
+        },
+        {
+          "id": "zm_045",
+          "title": "Mandarin voice 45",
+          "subtitle": "Mandarin Chinese · male",
+          "sid": 76
+        },
+        {
+          "id": "zm_050",
+          "title": "Mandarin voice 50",
+          "subtitle": "Mandarin Chinese · male",
+          "sid": 77
+        },
+        {
+          "id": "zm_052",
+          "title": "Mandarin voice 52",
+          "subtitle": "Mandarin Chinese · male",
+          "sid": 78
+        },
+        {
+          "id": "zm_053",
+          "title": "Mandarin voice 53",
+          "subtitle": "Mandarin Chinese · male",
+          "sid": 79
+        },
+        {
+          "id": "zm_054",
+          "title": "Mandarin voice 54",
+          "subtitle": "Mandarin Chinese · male",
+          "sid": 80
+        },
+        {
+          "id": "zm_055",
+          "title": "Mandarin voice 55",
+          "subtitle": "Mandarin Chinese · male",
+          "sid": 81
+        },
+        {
+          "id": "zm_056",
+          "title": "Mandarin voice 56",
+          "subtitle": "Mandarin Chinese · male",
+          "sid": 82
+        },
+        {
+          "id": "zm_057",
+          "title": "Mandarin voice 57",
+          "subtitle": "Mandarin Chinese · male",
+          "sid": 83
+        },
+        {
+          "id": "zm_058",
+          "title": "Mandarin voice 58",
+          "subtitle": "Mandarin Chinese · male",
+          "sid": 84
+        },
+        {
+          "id": "zm_061",
+          "title": "Mandarin voice 61",
+          "subtitle": "Mandarin Chinese · male",
+          "sid": 85
+        },
+        {
+          "id": "zm_062",
+          "title": "Mandarin voice 62",
+          "subtitle": "Mandarin Chinese · male",
+          "sid": 86
+        },
+        {
+          "id": "zm_063",
+          "title": "Mandarin voice 63",
+          "subtitle": "Mandarin Chinese · male",
+          "sid": 87
+        },
+        {
+          "id": "zm_064",
+          "title": "Mandarin voice 64",
+          "subtitle": "Mandarin Chinese · male",
+          "sid": 88
+        },
+        {
+          "id": "zm_065",
+          "title": "Mandarin voice 65",
+          "subtitle": "Mandarin Chinese · male",
+          "sid": 89
+        },
+        {
+          "id": "zm_066",
+          "title": "Mandarin voice 66",
+          "subtitle": "Mandarin Chinese · male",
+          "sid": 90
+        },
+        {
+          "id": "zm_068",
+          "title": "Mandarin voice 68",
+          "subtitle": "Mandarin Chinese · male",
+          "sid": 91
+        },
+        {
+          "id": "zm_069",
+          "title": "Mandarin voice 69",
+          "subtitle": "Mandarin Chinese · male",
+          "sid": 92
+        },
+        {
+          "id": "zm_080",
+          "title": "Mandarin voice 80",
+          "subtitle": "Mandarin Chinese · male",
+          "sid": 93
+        },
+        {
+          "id": "zm_081",
+          "title": "Mandarin voice 81",
+          "subtitle": "Mandarin Chinese · male",
+          "sid": 94
+        },
+        {
+          "id": "zm_082",
+          "title": "Mandarin voice 82",
+          "subtitle": "Mandarin Chinese · male",
+          "sid": 95
+        },
+        {
+          "id": "zm_089",
+          "title": "Mandarin voice 89",
+          "subtitle": "Mandarin Chinese · male",
+          "sid": 96
+        },
+        {
+          "id": "zm_091",
+          "title": "Mandarin voice 91",
+          "subtitle": "Mandarin Chinese · male",
+          "sid": 97
+        },
+        {
+          "id": "zm_095",
+          "title": "Mandarin voice 95",
+          "subtitle": "Mandarin Chinese · male",
+          "sid": 98
+        },
+        {
+          "id": "zm_096",
+          "title": "Mandarin voice 96",
+          "subtitle": "Mandarin Chinese · male",
+          "sid": 99
+        },
+        {
+          "id": "zm_097",
+          "title": "Mandarin voice 97",
+          "subtitle": "Mandarin Chinese · male",
+          "sid": 100
+        },
+        {
+          "id": "zm_098",
+          "title": "Mandarin voice 98",
+          "subtitle": "Mandarin Chinese · male",
+          "sid": 101
+        },
+        {
+          "id": "zm_100",
+          "title": "Mandarin voice 100",
+          "subtitle": "Mandarin Chinese · male",
+          "sid": 102
+        }
+      ],
+      "defaultVoiceId": "af_maple",
+      "frontend": {
+        "lang": "en"
+      },
       "sourceUrl": "https://github.com/k2-fsa/sherpa-onnx/releases/download/tts-models/kokoro-int8-multi-lang-v1_1.tar.bz2",
       "sourceRoot": "kokoro-int8-multi-lang-v1_1",
       "licenseNotices": [
